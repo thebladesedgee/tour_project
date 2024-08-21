@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+        padding: 20px;
+      }
+      .filter-panel {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+      .filter-panel .btn {
+        margin-right: 10px;
+      }
+      .table-responsive {
+        margin-top: 20px;
+      }
+      .pagination {
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Filter Panel -->
+      <div class="filter-panel d-flex flex-wrap mb-3">
+        <button type="button" class="btn btn-light">
+          <i class="fas fa-bars"></i> Tümü
+        </button>
+        <button type="button" class="btn btn-light">
+          <i class="fas fa-bus"></i> Yurt İçi Turlar
+        </button>
+        <button type="button" class="btn btn-light">
+          <i class="fas fa-plane"></i> Yurt Dışı Turlar
+        </button>
+        <button type="button" class="btn btn-light">
+          <i class="fas fa-tasks"></i> Aktiviteler
+        </button>
+        <button
+          type="button"
+          class="btn btn-light dropdown-toggle"
+          data-toggle="dropdown"
+        >
+          <i class="fas fa-globe"></i> Diğer
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Seçenek 1</a>
+          <a class="dropdown-item" href="#">Seçenek 2</a>
+        </div>
+        <button type="button" class="btn btn-success ml-auto">
+          <i class="fas fa-plus"></i> Yeni Ekle
+        </button>
+        <button type="button" class="btn btn-secondary">
+          <i class="fas fa-plus-square"></i> Ek Hizmetler
+        </button>
+        <button
+          type="button"
+          class="btn btn-light dropdown-toggle"
+          data-toggle="dropdown"
+        >
+          <i class="fas fa-map-marker-alt"></i> Bölgeler
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Bölge 1</a>
+          <a class="dropdown-item" href="#">Bölge 2</a>
+        </div>
+      </div>
+
+      <!-- Table Section -->
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Kod</th>
+              <th>Ürün</th>
+              <th>Süre</th>
+              <th>L. Fiyatı</th>
+              <th>Bölge</th>
+              <th>Son Güncelleme</th>
+              <th>Gösterim</th>
+              <th>Sıra</th>
+              <th>İşlemler</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="9" class="text-center">
+                Tabloda herhangi bir veri mevcut değil
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="d-flex justify-content-between">
+          <div>
+            Sayfada
+            <select class="custom-select d-inline-block w-auto">
+              <option selected>25</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+            </select>
+            kayıt göster
+          </div>
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#">Önceki</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Sonraki</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- FontAwesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  </body>
+</html>

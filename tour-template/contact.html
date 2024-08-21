@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
+
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="xmlrpc.php" />
+    <title>Demo 2 - Travel Tour</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link
+      rel="stylesheet"
+      id="gdlr-core-google-font-css"
+      href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CABeeZee%3Aregular%2Citalic&amp;subset=latin%2Clatin-ext%2Cdevanagari&amp;ver=5.2.4"
+      type="text/css"
+      media="all"
+    />
+
+    <link
+      rel="stylesheet"
+      href="plugins/revslider/public/assets/css/settings.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="plugins/tourmaster/plugins/elegant-font/style.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="plugins/tourmaster/tourmaster.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="plugins/goodlayers-core/plugins/combine/style.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="plugins/goodlayers-core/include/css/page-builder.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="css/tourmaster-style-custom.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style-core.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="css/traveltour-style-custom.css"
+      type="text/css"
+      media="all"
+    />
+
+    <link rel="stylesheet" href="../../public/css/login.css">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+ 
+
+<body class="home page-template-default page page-id-5225 gdlr-core-body tourmaster-body traveltour-body traveltour-body-front traveltour-full  traveltour-with-sticky-navigation gdlr-core-link-to-lightbox">
+
+    <!-- mobile -->
+    <div class="traveltour-mobile-header-wrap">
+        <div class="traveltour-top-bar">
+            <div class="traveltour-top-bar-background"></div>
+            <div class="traveltour-top-bar-container clearfix traveltour-top-bar-full ">
+                <div class="traveltour-top-bar-left traveltour-item-pdlr travel-tour-hide-on-mobile"><i class="fa fa-phone" style="font-size: 16px ;color: #94999f ;margin-right: 10px ;"></i> 0850 307 83 83
+                    <i class="fa fa-envelope-o" style="font-size: 16px ;color: #94999f ;margin-left: 30px ;margin-right: 10px ;"></i> info@geziburda.com
+                    <i class="fa-solid fa-tty" style="font-size: 16px ;color: #94999f ;margin-left: 30px ;margin-right: 10px ;"></i> <a href="contact.html">İletişim</a>
+                            </div>
+                <div class="traveltour-top-bar-right traveltour-item-pdlr">
+                    <div class="traveltour-top-bar-right-social"><a href="#" target="_blank" class="traveltour-top-bar-social-icon" title="instagram"><i class="fa-brands fa-instagram" ></i></a></div>
+                    <div class="tourmaster-user-top-bar tourmaster-guest">
+                          <!--   <a class="tourmaster-user-top-bar-login" href="#" style="pointer-events: none; cursor: default; margin-right: 10px;"><span class="tourmaster-text" ><%= user.username %></span></a>
+                            <a class="tourmaster-user-top-bar-login" href="/logout"
+                            ><i class="icon_lock_alt"></i
+                            ><span class="tourmaster-text">Çıkıs Yap</span></a> -->
+                            <a class="tourmaster-user-top-bar-login" href="login"
+                            ><i class="icon_lock_alt"></i
+                            ><span class="tourmaster-text">Giriş Yap</span></a
+                          ><a class="tourmaster-user-top-bar-signup" href="register"
+                            ><i class="fa fa-user"></i
+                            ><span class="tourmaster-text">Üye Ol</span></a
+                          >                         
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="traveltour-mobile-header traveltour-header-background traveltour-style-slide" id="traveltour-mobile-header">
+            <div class="traveltour-mobile-header-container traveltour-container">
+                <div class="traveltour-logo  traveltour-item-pdlr">
+                    <div class="traveltour-logo-inner">
+                        <a href="/"><img src="upload/logo-v3.png" alt="" width="250" height="52" title="logo-v3" /></a>
+                    </div>
+                </div>
+                <div class="traveltour-mobile-menu-right">
+                    <div class="traveltour-top-search-wrap">
+                        <div class="traveltour-top-search-close"></div>
+    
+                        <div class="traveltour-top-search-row">
+                            <div class="traveltour-top-search-cell">
+                                <form role="search" method="get" class="search-form" action="index.html">
+                                    <input type="text" class="search-field traveltour-title-font" placeholder="Search..." value="" name="s">
+                                    <div class="traveltour-top-search-submit"><i class="fa fa-search"></i></div>
+                                    <input type="submit" class="search-submit" value="Search">
+                                    <div class="traveltour-top-search-close"><i class="icon_close"></i></div>
+                                </form>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="traveltour-mobile-menu"><a class="traveltour-mm-menu-button traveltour-mobile-menu-button traveltour-mobile-button-hamburger" href="#traveltour-mobile-menu"><span></span></a>
+                        <div class="traveltour-mm-menu-wrap traveltour-navigation-font" id="traveltour-mobile-menu" data-slide="right">
+                            <ul id="menu-main-navigation" class="m-menu">
+                                <li class="menu-item"><a href="index.html">Anasayfa</a></li>
+                                <li class="menu-item menu-item-has-children"><a href="#">Kültür Turları</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children"><a href="#">Gap Turları</a>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="#">Günübirlik Turlar</a>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="#">Uçaklı Turlar</a>
+                                        </li>                                                
+                                        <li class="menu-item menu-item-has-children"><a href="#">Haftasonu Turları</a>
+                                        </li>             
+                                        <li class="menu-item menu-item-has-children"><a href="#">Kapadokya Turları</a>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="#">Karadeniz Turlar</a>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="#">Salda Gölü Turlar</a>
+                                        </li>                                                
+                                        <li class="menu-item menu-item-has-children"><a href="#">Likya ve Fethiye Turları</a>
+                                        </li>             
+                                        <li class="menu-item menu-item-has-children"><a href="#">Ege ve Akdeniz Turları</a>
+                                        </li> 
+    
+                                    </ul>
+                                </li>
+                                <li class="menu-item  current-menu-item menu-item-has-children"><a href="/international-tours">YurtDışı Turları</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children"><a href="tour-full-with-frame-right-sidebar.html">Balkan Turları</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="tour-full-width.html">Otobüslü Balkan Turları</a></li>
+                                                <li class="menu-item"><a href="tour-full-left-sidebar.html">Uçaklı Vizesiz Balkan Turları</a></li>
+                                                <li class="menu-item"><a href="tour-full-with-frame-right-sidebar.html">Ksamil Turları</a></li>
+                                                <li class="menu-item"><a href="tour-full-with-frame-left-sidebar.html">Selanik Turları</a></li>
+                                                <li class="menu-item"><a href="tour-full-with-frame-left-sidebar.html">Budva Turları</a></li>
+                                                <li class="menu-item"><a href="tour-full-with-frame-left-sidebar.html">Belgrad Turları</a></li>
+                                                <li class="menu-item"><a href="tour-full-with-frame-left-sidebar.html">Romanya Turları</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="tour-side-thumbnail-with-frame-right-sidebar.html">Avrupa Turları</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="tour-side-thumbnail-with-frame-right-sidebar.html">Büyük Avrupa Turları</a></li>
+                                                <li class="menu-item"><a href="tour-side-thumbnail-with-frame-left-sidebar.html">İtalya Turları</a></li>
+                                                <li class="menu-item"><a href="tour-side-thumbnail-right-sidebar.html">İspanya Turları</a></li>
+                                                <li class="menu-item"><a href="tour-side-thumbnail-left-sidebar.html">Prag Turları</a></li>
+                                                <li class="menu-item"><a href="tour-side-thumbnail-with-frame-right-sidebar.html">Portekiz</a></li>
+                                                <li class="menu-item"><a href="tour-side-thumbnail-with-frame-left-sidebar.html">Orta Avrupa Turları</a></li>
+                                                <li class="menu-item"><a href="tour-side-thumbnail-right-sidebar.html">Benelux - Paris Turları</a></li>
+                                                <li class="menu-item"><a href="tour-side-thumbnail-left-sidebar.html">Kuzey Işıkları Lapland</a></li>
+                                                <li class="menu-item"><a href="tour-side-thumbnail-with-frame-right-sidebar.html">Noel Pazarları Turları</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="tour-thumbnail-style-3-columns.html">Vizesiz Turlar</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="tour-thumbnail-style-2-columns.html">Uçaklı Vizesiz Balkan Turları</a></li>
+                                                <li class="menu-item"><a href="tour-thumbnail-style-3-columns.html">Budva Turları</a></li>
+                                                <li class="menu-item"><a href="tour-thumbnail-style-4-columns.html">Mısır Turları</a></li>
+                                                <li class="menu-item"><a href="tour-thumbnail-style-5-columns.html">Sharm El Sheik Turları</a></li>
+                                                <li class="menu-item"><a href="tour-thumbnail-no-space-2-columns.html">Bangkok Pattaya Turları</a></li>
+                                                <li class="menu-item"><a href="tour-thumbnail-no-space-3-columns.html">Phuket Turları</a></li>
+                                                <li class="menu-item"><a href="tour-thumbnail-no-space-4-columns.html">Tayland Turları</a></li>
+                                                <li class="menu-item"><a href="tour-thumbnail-no-space-5-columns.html">Uzakdoğu Turları</a></li>
+                                                <li class="menu-item"><a href="tour-thumbnail-no-space-5-columns.html">Fas Turları</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="tour-classic-3-columns.html">Yunanistan Turları</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="tour-classic-2-columns.html">Yunan Adaları Turları</a></li>
+                                                <li class="menu-item"><a href="tour-classic-3-columns.html">Thassos Turları</a></li>
+                                                <li class="menu-item"><a href="tour-classic-4-columns.html">Halkidiki Turları</a></li>
+                                                <li class="menu-item"><a href="tour-classic-5-columns.html">Selanik Turları</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="tour-classic-with-detail-3-columns.html">Dubai Turları</a>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="tour-classic-with-custom-excerpt-3-columns.html">Uzakdoğu / Balayı Turları</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="tour-classic-with-custom-excerpt-2-columns.html">Bali Turları</a></li>
+                                                <li class="menu-item"><a href="tour-classic-with-custom-excerpt-3-columns.html">Maldivler Turları</a></li>
+                                                <li class="menu-item"><a href="tour-classic-with-custom-excerpt-4-columns.html">Pattaya Turları</a></li>
+                                                <li class="menu-item"><a href="tour-classic-with-custom-excerpt-2-columns.html">Tayland Turları</a></li>
+                                                <li class="menu-item"><a href="tour-classic-with-custom-excerpt-3-columns.html">Seyşeller Turları</a></li>
+                                                <li class="menu-item"><a href="tour-classic-with-custom-excerpt-4-columns.html">Koh Samui Turları</a></li>
+                                                <li class="menu-item"><a href="tour-classic-with-custom-excerpt-2-columns.html">Bangkok Pattaya Turları</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="tour-classic-with-detail-3-columns.html">Yılbaşı Turları</a>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="destinations.html">Kurban Bayramı Turları</a></li>
+                                <li class="menu-item menu-item-has-children"><a href="#">İzmir Çıkışlı Turlar</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item" data-size="60"><a href="finland-helsinki-santa-claus-town-8-days.html">İzmir Çıkışlı Karadeniz Turları</a></li>
+                                        <li class="menu-item" data-size="60"><a href="america-grand-canyon-golden-gate-bridge-las-vegas.html">İzmir Çıkışlı Bodrum Turları</a></li>
+                                        <li class="menu-item" data-size="60"><a href="china-suzhou-and-zhouzhuang-water-village.html">İzmir Çıkışlı Fethiye Likya Turları</a></li>
+                                        <li class="menu-item" data-size="60"><a href="pais-eiffel-tower-notre-dame-cathedral-champs-elysees-arc-of-triumph-day-tour.html">İzmir Çıkışlı Doğu Anafolu Gap Turları</a></li>
+                                    </ul>
+                                </li>
+    
+                                <li class="menu-item menu-item-has-children"><a href="blog-full-right-sidebar-with-frame.html">Yunan Adaları</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children" data-size="60"><a href="blog-full-right-sidebar-with-frame.html">Kos Adası Turları</a>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children" data-size="60"><a href="blog-grid-3-columns-no-space.html">Samos Adası Turları</a>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children" data-size="60"><a href="blog-3-columns-with-frame.html">Sakız Adası Turları</a>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children" data-size="60"><a href="blog-3-columns-with-frame.html">Midilli Adası Turları</a>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children" data-size="60"><a href="blog-3-columns-with-frame.html">Rodos Adası Turları</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Web -->
+    <div class="traveltour-body-outer-wrapper ">
+        <div class="traveltour-body-wrapper clearfix  traveltour-with-frame">
+            <div class="traveltour-top-bar traveltour-with-divider">
+                <div class="traveltour-top-bar-background"></div>
+                <div class="traveltour-top-bar-container clearfix traveltour-top-bar-full ">
+                    <div class="traveltour-top-bar-left traveltour-item-pdlr"><i class="fa fa-phone" style="font-size: 16px ;color: #94999f ;margin-right: 10px ;"></i> 0850 307 83 83
+                        <i class="fa fa-envelope-o" style="font-size: 16px ;color: #94999f ;margin-left: 30px ;margin-right: 10px ;"></i> info@geziburda.com
+                        <i class="fa-solid fa-tty" style="font-size: 16px ;color: #94999f ;margin-left: 30px ;margin-right: 10px ;"></i> <a href="contact.html">İletişim</a></div>
+                    <div class="traveltour-top-bar-right traveltour-item-pdlr">
+                        <div class="traveltour-top-bar-right-social"><a href="#" target="_blank" class="traveltour-top-bar-social-icon" title="instagram"><i class="fa-brands fa-instagram" ></i></a></div>
+                        <div class="tourmaster-user-top-bar tourmaster-guest" style="display: flex;">
+                               <!--  <a class="tourmaster-user-top-bar-login" href="#" style="pointer-events: none; cursor: default; margin-right: 10px;"><span class="tourmaster-text" ><%= user.username %></span></a>
+                                <h5></h5>
+                                <a class="tourmaster-user-top-bar-login" href="/logout"><i class="icon_lock_alt" ></i><span class="tourmaster-text" >Çıkış Yap</span></a> -->
+                                <a class="tourmaster-user-top-bar-login" href="login"><i class="icon_lock_alt" ></i><span class="tourmaster-text" >Giriş Yap</span></a>
+                                <a class="tourmaster-user-top-bar-signup" href="register"><i class="fa fa-user" ></i><span class="tourmaster-text" >Üye Ol</span></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <header class="traveltour-header-wrap traveltour-header-style-plain  traveltour-style-menu-right traveltour-sticky-navigation traveltour-style-fixed">
+                <div class="traveltour-header-background"></div>
+                <div class="traveltour-header-container">
+    
+                    <div class="traveltour-header-container-inner clearfix traveltour-header-flex">
+                        <div class="traveltour-logo  traveltour-item-pdlr">
+                            <div class="traveltour-logo-inner">
+                                <a href="/"><img src="upload/logo-v3.png" alt="" width="250" height="52" title="logo-v3" /></a>
+                            </div>
+                        </div>
+                        <div class="traveltour-navigation traveltour-item-pdlr clearfix ">
+                            <div class="traveltour-main-menu" id="traveltour-main-menu">
+                                    <ul id="menu-main-navigation-1" class="sf-menu">
+                                       <li class="menu-item menu-item-has-children traveltour-normal-menu"><a href="#" class="sf-with-ul-pre">KÜLTÜR TURLARI</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Gap Turları</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Günübirlik Turlar</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Uçaklı Turlar</a>
+                                                </li>                                                
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Haftasonu Turları</a>
+                                                </li>             
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Kapadokya Turları</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Karadeniz Turlar</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Salda Gölü Turlar</a>
+                                                </li>                                                
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Likya ve Fethiye Turları</a>
+                                                </li>             
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Ege ve Akdeniz Turları</a>
+                                                </li>             
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children traveltour-normal-menu"><a href="/international-tours" class="sf-with-ul-pre">Yurtdışı Turları</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="tour-full-with-frame-right-sidebar.html" class="sf-with-ul-pre">Balkan Turları</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="tour-full-width.html">Otobüslü Balkan Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-full-left-sidebar.html">Uçaklı Vizesiz Balkan Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-full-with-frame-right-sidebar.html">Ksamil Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-full-with-frame-left-sidebar.html">Selanik Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-full-with-frame-left-sidebar.html">Budva Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-full-with-frame-left-sidebar.html">Belgrad Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-full-with-frame-left-sidebar.html">Romanya Turları</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="tour-side-thumbnail-with-frame-right-sidebar.html" class="sf-with-ul-pre">Avrupa Turları</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="tour-side-thumbnail-with-frame-right-sidebar.html">Büyük Avrupa Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-side-thumbnail-with-frame-left-sidebar.html">İtalya Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-side-thumbnail-right-sidebar.html">İspanya Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-side-thumbnail-left-sidebar.html">Prag Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-side-thumbnail-with-frame-right-sidebar.html">Portekiz</a></li>
+                                                        <li class="menu-item"><a href="tour-side-thumbnail-with-frame-left-sidebar.html">Orta Avrupa Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-side-thumbnail-right-sidebar.html">Benelux - Paris Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-side-thumbnail-left-sidebar.html">Kuzey Işıkları Lapland</a></li>
+                                                        <li class="menu-item"><a href="tour-side-thumbnail-with-frame-right-sidebar.html">Noel Pazarları Turları</a></li>
+    
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="tour-thumbnail-style-3-columns.html" class="sf-with-ul-pre">Vizesiz Turlar</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="tour-thumbnail-style-2-columns.html">Uçaklı Vizesiz Balkan Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-thumbnail-style-3-columns.html">Budva Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-thumbnail-style-4-columns.html">Mısır Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-thumbnail-style-5-columns.html">Sharm El Sheik Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-thumbnail-no-space-2-columns.html">Bangkok Pattaya Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-thumbnail-no-space-3-columns.html">Phuket Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-thumbnail-no-space-4-columns.html">Tayland Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-thumbnail-no-space-5-columns.html">Uzakdoğu Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-thumbnail-no-space-5-columns.html">Fas Turları</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="tour-classic-3-columns.html" class="sf-with-ul-pre">Yunanistan Turları</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="tour-classic-2-columns.html">Yunan Adaları Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-classic-3-columns.html">Thassos Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-classic-4-columns.html">Halkidiki Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-classic-5-columns.html">Selanik Turları</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="tour-classic-with-detail-3-columns.html">Dubai Turları</a>
+                                                </li>
+                                                
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="tour-classic-with-custom-excerpt-3-columns.html" class="sf-with-ul-pre">Uzakdoğu / Balayı Turları</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="tour-classic-with-custom-excerpt-2-columns.html">Bali Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-classic-with-custom-excerpt-3-columns.html">Maldivler Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-classic-with-custom-excerpt-4-columns.html">Pattaya Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-classic-with-custom-excerpt-2-columns.html">Tayland Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-classic-with-custom-excerpt-3-columns.html">Seyşeller Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-classic-with-custom-excerpt-4-columns.html">Koh Samui Turları</a></li>
+                                                        <li class="menu-item"><a href="tour-classic-with-custom-excerpt-2-columns.html">Bangkok Pattaya Turları</a></li>
+                                                    </ul>
+                                                </li>
+    
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="tour-classic-with-detail-3-columns.html">Yılbaşı Turları</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item traveltour-normal-menu"><a href="destinations.html">Kurban Bayramı Turları</a></li>
+                                        <li class="menu-item menu-item-has-children traveltour-normal-menu"><a href="#" class="sf-with-ul-pre">Yaz Tatili Turları</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Gap Turları</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Günübirlik Turlar</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Uçaklı Turlar</a>
+                                                </li>                                                
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Haftasonu Turları</a>
+                                                </li>             
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Kapadokya Turları</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Karadeniz Turlar</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Salda Gölü Turlar</a>
+                                                </li>                                                
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Likya ve Fethiye Turları</a>
+                                                </li>             
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="#">Ege ve Akdeniz Turları</a>
+                                                </li>             
+                                            </ul>
+                                        </li>
+    
+    
+                                        <li class="menu-item  menu-item-has-children traveltour-normal-menu"><a href="#" class="sf-with-ul-pre">İzmir Çıkışlı Turlar</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item" data-size="60"><a href="finland-helsinki-santa-claus-town-8-days.html">İzmir Çıkışlı Karadeniz Turları</a></li>
+                                                <li class="menu-item" data-size="60"><a href="america-grand-canyon-golden-gate-bridge-las-vegas.html">İzmir Çıkışlı Bodrum Turları</a></li>
+                                                <li class="menu-item" data-size="60"><a href="china-suzhou-and-zhouzhuang-water-village.html">İzmir Çıkışlı Fethiye Likya Turları</a></li>
+                                                <li class="menu-item" data-size="60"><a href="pais-eiffel-tower-notre-dame-cathedral-champs-elysees-arc-of-triumph-day-tour.html">İzmir Çıkışlı Doğu Anafolu Gap Turları</a></li>
+                                            </ul>
+                                        </li>
+    
+                                        <li class="menu-item  menu-item-has-children traveltour-normal-menu"><a href="blog-full-right-sidebar-with-frame.html" class="sf-with-ul-pre">Yunan Adaları</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="blog-full-right-sidebar-with-frame.html">Kos Adası Turları</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="blog-grid-3-columns-no-space.html">Samos Adası Turları</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="blog-3-columns-with-frame.html">Sakız Adası Turları</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="blog-3-columns-with-frame.html">Midilli Adası Turları</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children" data-size="60"><a href="blog-3-columns-with-frame.html">Rodos Adası Turları</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                <div class="traveltour-navigation-slide-bar" id="traveltour-navigation-slide-bar"></div>
+                            </div>
+                            <div class="traveltour-main-menu-right-wrap clearfix ">
+                                <div class="traveltour-top-search-wrap">
+                                    <div class="traveltour-top-search-close"></div>
+    
+                                    <div class="traveltour-top-search-row">
+                                        <div class="traveltour-top-search-cell">
+                                            <form role="search" method="get" class="search-form" action="index.html">
+                                                <input type="text" class="search-field traveltour-title-font" placeholder="Search..." value="" name="s">
+                                                <div class="traveltour-top-search-submit"><i class="fa fa-search"></i></div>
+                                                <input type="submit" class="search-submit" value="Search">
+                                                <div class="traveltour-top-search-close"><i class="icon_close"></i></div>
+                                            </form>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- traveltour-navigation -->
+    
+                    </div>
+                    <!-- traveltour-header-inner -->
+                </div>
+                <!-- traveltour-header-container -->
+            </header>
+            <!-- header -->
+
+
+
+            <div class="traveltour-page-wrapper" id="traveltour-page-wrapper">
+                <div class="gdlr-core-page-builder-body">
+                    <div class="gdlr-core-pbf-wrapper " style="padding: 350px 0px 160px 0px;" data-skin="Dark">
+                        <div class="gdlr-core-pbf-background-wrap">
+                            <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js" style="background-image: url(images/hero-bg.jpg) ;background-size: cover ;background-position: center ;" data-parallax-speed="0.3"></div>
+                        </div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js " data-gdlr-animation="fadeInUp" data-gdlr-animation-duration="600ms" data-gdlr-animation-offset="0.8">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                                <div class="gdlr-core-pbf-element">
+                                    <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr">
+                                        <div class="gdlr-core-title-item-title-wrap">
+                                            <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 75px ;letter-spacing: 0px ;text-transform: none ;">Contact Us<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 25px ;margin-top: 25px ;">Get Intouch</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-wrapper ">
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20 gdlr-core-column-first">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 50px 20px 0px 20px;">
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js " data-gdlr-animation="fadeInUp" data-gdlr-animation-duration="600ms" data-gdlr-animation-offset="0.8">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-icon-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 55px ;"><i class=" gdlr-core-icon-item-icon fa fa-phone" style="color: #454545 ;font-size: 40px ;min-width: 40px ;min-height: 40px ;"></i></div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 25px ;">
+                                                    <div class="gdlr-core-title-item-title-wrap">
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 24px ;letter-spacing: 0px ;text-transform: none ;">Phone<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 0px ;">
+                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px ;">
+                                                        <p>A wonderful serenity has taken possession of my entire soul, like these.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
+                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px ;">
+                                                        <p class="contact-p">0850 307 83 83</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 50px 20px 0px 20px;">
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js " data-gdlr-animation="fadeInDown" data-gdlr-animation-duration="600ms" data-gdlr-animation-offset="0.8">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-icon-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 55px ;"><i class=" gdlr-core-icon-item-icon fa fa-envelope-o" style="color: #454545 ;font-size: 40px ;min-width: 40px ;min-height: 40px ;"></i></div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 25px ;">
+                                                    <div class="gdlr-core-title-item-title-wrap">
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 24px ;letter-spacing: 0px ;text-transform: none ;">Email<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 0px ;">
+                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px ;">
+                                                        <p>A wonderful serenity has taken possession of my entire soul, like these.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
+                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px ;">
+                                                        <p class="contact-p">info@geziburda.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-core-pbf-column gdlr-core-column-20">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js " style="padding: 50px 20px 0px 20px;">
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js " data-gdlr-animation="fadeInUp" data-gdlr-animation-duration="600ms" data-gdlr-animation-offset="0.8">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-icon-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 55px ;"><i class=" gdlr-core-icon-item-icon fa fa-location-arrow" style="color: #454545 ;font-size: 40px ;min-width: 40px ;min-height: 40px ;"></i></div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr" style="padding-bottom: 25px ;">
+                                                    <div class="gdlr-core-title-item-title-wrap">
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 24px ;letter-spacing: 0px ;text-transform: none ;">Location<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" style="padding-bottom: 0px ;">
+                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px ;">
+                                                        <p>Zuhuratbaba Mahallesi İncirli Caddesi No:1 Akyüz İş Hanı Kat:1 Daire:15-16
+                                                            <br />Bakırköy - İSTANBUL</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
+                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px ;">
+                                                        <p><a href="#">View On Google Map</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdlr-core-pbf-wrapper " style="padding: 95px 0px 90px 0px;" data-skin="Grey">
+                        <div class="gdlr-core-pbf-background-wrap" style="background-color: #f3f3f3 ;"></div>
+                        <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                            <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                                <div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first">
+                                    <div class="gdlr-core-pbf-column-content-margin gdlr-core-js ">
+                                        <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js " style="max-width: 760px ;">
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr">
+                                                    <div class="gdlr-core-title-item-title-wrap">
+                                                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title" style="font-size: 32px ;letter-spacing: 0px ;text-transform: none ;">Leave us your info <span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div><span class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption" style="font-size: 19px ;font-style: normal ;">and we will get back to you.</span></div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-divider-item gdlr-core-item-pdlr gdlr-core-item-mgb gdlr-core-divider-item-normal gdlr-core-center-align" style="margin-bottom: 50px ;">
+                                                    <div class="gdlr-core-divider-container" style="max-width: 40px ;">
+                                                        <div class="gdlr-core-divider-line gdlr-core-skin-divider" style="border-color: #2b2b2b ;border-bottom-width: 2px ;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-pbf-element">
+                                                <div class="gdlr-core-contact-form-7-item gdlr-core-item-pdlr gdlr-core-item-pdb ">
+                                                    <div role="form" class="wpcf7" id="wpcf7-f1319-p1964-o1" lang="en-US" dir="ltr">
+                                                        <div class="screen-reader-response"></div>
+                                                        <form class="quform" id="form1" action="/contact" method="POST">
+
+                                            
+
+                                                            <div class="quform-elements">
+
+                                                              <div class="quform-element">
+                                                                <div style="display: none;" class="alert alert-success" id="sendMessage"></div>
+
+                                                            </div>
+
+                                                                <div class="quform-element">
+                                                                    <p>
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                                            <input id="name" type="text" name="name" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="İsim">
+                                                                        </span> 
+                                                                    </p>
+                                                                </div>
+                                                                <div class="quform-element">
+                                                                    <p>
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-email">
+                                                                            <input id="email" type="email" name="email" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email">
+                                                                        </span> 
+                                                                    </p>
+                                                                </div>
+                                                                <div class="quform-element">
+                                                                    <p>
+                                                                        <br>
+                                                                        <span class="wpcf7-form-control-wrap your-message">
+                                                                            <textarea  id="message" name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Mesaj"></textarea>
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+                                                                <p>
+                                                                    <!-- Begin Submit button -->
+                                                                    <div class="quform-submit">
+                                                                        <div class="quform-submit-inner">
+                                                                            <button class="submit-button"><span>Gönder</span></button>
+                                                                        </div>
+                                                                        <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
+                                                                    </div>
+                                                                </p>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer>
+
+                <div class="marquee-container">
+                   <div class="marquee">
+                       Sitemizde anılan tüm fiyatlar, geçerli kartlar ile tek ödemede, en ucuz başlangıç fiyatlardır ve yeterli kontenjan olması durumunda geçerlidir.
+                   </div>
+               </div>
+               
+               
+                <div class="traveltour-footer-wrapper ">
+                       <div class="traveltour-footer-container traveltour-container clearfix">
+                           <div class="traveltour-footer-column traveltour-item-pdlr traveltour-column-20">
+                               <div id="gdlr-core-custom-menu-widget-2" class="widget widget_gdlr-core-custom-menu-widget traveltour-widget">
+                                   <h3 class="traveltour-widget-title"><span class="traveltour-widget-head-text">HAKKIMIZDA</span></h3><span class="clear"></span>
+                                   <div class="menu-about-us-container">
+                                       <p>Hayalinizdeki tatil için en iyi fiyatları buluyor, otelden günlük turlara en iyi önerileri size getiriyoruz. <a href="#">Devam >></a></p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="traveltour-footer-column traveltour-item-pdlr traveltour-column-10">
+                               <div id="gdlr-core-custom-menu-widget-3" class="widget widget_gdlr-core-custom-menu-widget traveltour-widget">
+                                   <h3 class="traveltour-widget-title"><span class="traveltour-widget-head-text">BAĞLANTILAR</span></h3><span class="clear"></span>
+                                   <div class="menu-support-container">
+                                       <ul id="menu-support" class="gdlr-core-custom-menu-widget gdlr-core-menu-style-plain">
+                                           <li class="menu-item"><a href="#" style="color: #ffffff;">Ana Sayfa</a></li>
+                                           <li class="menu-item"><a href="#" style="color: #ffffff;">Paket Turlar</a></li>
+                                           <li class="menu-item"><a href="#" style="color: #ffffff;">Gizlilik Sözleşmesi</a></li>
+                                           <li class="menu-item"><a href="#" style="color: #ffffff;">Hizmet Sözleşmesi</a></li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="traveltour-footer-column traveltour-item-pdlr traveltour-column-10">
+                               <div id="text-15" class="widget widget_text traveltour-widget">
+                                   <h3 class="traveltour-widget-title"><span class="traveltour-widget-head-text">BAĞLANTILAR</span></h3><span class="clear"></span>
+                                   <div class="menu-support-container">
+                                       <ul id="menu-support" class="gdlr-core-custom-menu-widget gdlr-core-menu-style-plain">
+                                           <li class="menu-item"><a href="#" style="color: #ffffff;">Tur Satış Sözleşmesi</a></li>
+                                           <li class="menu-item"><a href="#" style="color: #ffffff;">Çerez Kullanımı</a></li>
+                                           <li class="menu-item"><a href="#" style="color: #ffffff;">Kütahya Çizelgesi</a></li>
+                                           <li class="menu-item"><a href="#" style="color: #ffffff;">ACENTELERİMİZ</a></li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="traveltour-footer-column traveltour-item-pdlr traveltour-column-10">
+                               <div id="text-1" class="widget widget_text traveltour-widget">
+                                   <div class="textwidget">
+                                       <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top" style="padding-bottom: 5px ;">
+                                           <div class="gdlr-core-title-item-title-wrap ">
+                                               <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 17px ;text-transform: none ;color: #ffffff; margin-bottom: 10px;">İLETİŞİM<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider" ></span></h3></div>
+                                       </div>
+                                       <i class="icon_phone" style="font-size: 16px ;color: #ffffff ;margin-right: 12px;"></i> <span style="font-size: 12px; color: #fff;">0850 307 83 83</span>
+                                       <span class="gdlr-core-space-shortcode" style="margin-top: 12px ;"></span>
+                                       <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top" style="padding-bottom: 5px ;">
+                                           <div class="gdlr-core-title-item-title-wrap "> 
+                                               </div>
+                                       </div> <i class="fa-solid fa-envelope" style="font-size: 16spx ;color: #ffffff ;margin-right: 16px;"></i><span style="font-size: 12px; color: #fff;">info@geziburda.com</span>
+                                       <span class="gdlr-core-space-shortcode" style="margin-top: 12px ;"></span>
+                                       <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top" style="padding-bottom: 5px ;">
+                                           <div class="gdlr-core-title-item-title-wrap ">
+                                               </div>
+                                       </div> <i class="fa-solid fa-location-dot" style="font-size: 16px ;color: #ffffff ;margin-right: 16px;"></i><span style="font-size: 12px; color: #fff;"> İsmet Kaptan Mahallesi Gaziosmanpaşa Bulvarı No:3/D KONAK İZMİR</span>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="traveltour-footer-column traveltour-item-pdlr traveltour-column-10">
+                               <div id="text-15" class="widget widget_text traveltour-widget">
+                                   <div class="textwidget">
+                                       
+                                           <img class="alignnone size-full wp-image-5360" src="./images/Turksab.webp" alt="" width="254" height="47" />
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="traveltour-copyright-wrapper ">
+                       <div class="traveltour-copyright-container traveltour-container clearfix">
+                           <div class="traveltour-copyright-center traveltour-item-pdlr">© 2019 Travel Tour All Rights Reserved.</div>
+                      </div>
+                   </div>
+               </footer>
+               </div>
+               </div>
+               
+               <script type='text/javascript' src='js/jquery/jquery.js'></script>
+               <script type='text/javascript' src='js/jquery/jquery-migrate.min.js'></script>
+               <script type='text/javascript' src='js/jquery/ui/core.min.js'></script>
+               <script type='text/javascript' src='js/jquery/ui/datepicker.min.js'></script>
+               <script type='text/javascript' src='js/jquery/ui/effect.min.js'></script>
+               <script type='text/javascript' src='plugins/tourmaster/tourmaster.js'></script>
+               <script type='text/javascript' src='js/plugins.js'></script>
+               <script type='text/javascript' src='plugins/goodlayers-core/plugins/combine/script.js'></script>
+               
+               <script type='text/javascript' src='plugins/goodlayers-core/include/js/page-builder.js'></script>
+               
+               
+               <!-- Rev SLider Plugin -->
+               <script type='text/javascript' src='plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js'></script>
+               <script type='text/javascript' src='plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js'></script>
+               <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+               <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+               <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+               <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js"></script>
+               <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>  
+               <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.actions.min.js"></script> 
+               <script type="text/javascript" src="plugins/revslider/public/assets/js/extensions/revolution.extension.video.min.js"></script> 
+               <script type="text/javascript">
+               /*<![CDATA[*/
+               function setREVStartSize(e) {
+               try {
+                   e.c = jQuery(e.c);
+                   var i = jQuery(window).width(),
+                       t = 9999,
+                       r = 0,
+                       n = 0,
+                       l = 0,
+                       f = 0,
+                       s = 0,
+                       h = 0;
+                   if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function(e, f) {
+                           f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e)
+                       }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) {
+                       var u = (e.c.width(), jQuery(window).height());
+                       if (void 0 != e.fullScreenOffsetContainer) {
+                           var c = e.fullScreenOffsetContainer.split(",");
+                           if (c) jQuery.each(c, function(e, i) {
+                               u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u
+                           }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0))
+                       }
+                       f = u
+                   } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
+                   e.c.closest(".rev_slider_wrapper").css({
+                       height: f
+                   })
+               } catch (d) {
+                   console.log("Failure at Presize of Slider:" + d)
+               }
+               }; /*]]>*/
+               </script>
+               <script type="text/javascript">
+               /*<![CDATA[*/
+               function revslider_showDoubleJqueryError(sliderID) {
+               var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+               errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+               errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+               errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+               errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+               jQuery(sliderID).show().html(errorMessage);
+               } /*]]>*/
+               </script>
+               <script>
+               /*<![CDATA[*/
+               var htmlDiv = document.getElementById("rs-plugin-settings-inline-css");
+               var htmlDivCss = "";
+               if (htmlDiv) {
+               htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+               } else {
+               var htmlDiv = document.createElement("div");
+               htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+               document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+               } /*]]>*/
+               </script>
+               <script type="text/javascript">
+               /*<![CDATA[*/
+               if (setREVStartSize !== undefined) setREVStartSize({
+               c: '#rev_slider_1_1',
+               gridwidth: [1280],
+               gridheight: [680],
+               sliderLayout: 'auto'
+               });
+               var revapi1, tpj;
+               (function() {
+               if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded", onLoad);
+               else onLoad();
+               
+               function onLoad() {
+                   if (tpj === undefined) {
+                       tpj = jQuery;
+                       if ("off" == "on") tpj.noConflict();
+                   }
+                   if (tpj("#rev_slider_1_1").revolution == undefined) {
+                       revslider_showDoubleJqueryError("#rev_slider_1_1");
+                   } else {
+                       revapi1 = tpj("#rev_slider_1_1").show().revolution({
+                           sliderType: "standard",
+                           jsFileLocation: "plugins/revslider/public/assets/js/",
+                           sliderLayout: "auto",
+                           dottedOverlay: "none",
+                           delay: 9000,
+                           navigation: {
+                               keyboardNavigation: "off",
+                               keyboard_direction: "horizontal",
+                               mouseScrollNavigation: "off",
+                               mouseScrollReverse: "default",
+                               onHoverStop: "off",
+                               touch: {
+                                   touchenabled: "on",
+                                   touchOnDesktop: "off",
+                                   swipe_threshold: 75,
+                                   swipe_min_touches: 1,
+                                   swipe_direction: "horizontal",
+                                   drag_block_vertical: false
+                               },
+                               arrows: {
+                                   style: "uranus",
+                                   enable: true,
+                                   hide_onmobile: true,
+                                   hide_under: 1024,
+                                   hide_onleave: true,
+                                   hide_delay: 200,
+                                   hide_delay_mobile: 1200,
+                                   tmp: '',
+                                   left: {
+                                       h_align: "left",
+                                       v_align: "center",
+                                       h_offset: 20,
+                                       v_offset: 50
+                                   },
+                                   right: {
+                                       h_align: "right",
+                                       v_align: "center",
+                                       h_offset: 20,
+                                       v_offset: 50
+                                   }
+                               },
+                               bullets: {
+                                   enable: true,
+                                   hide_onmobile: false,
+                                   style: "uranus",
+                                   hide_onleave: false,
+                                   direction: "horizontal",
+                                   h_align: "center",
+                                   v_align: "bottom",
+                                   h_offset: 5,
+                                   v_offset: 25,
+                                   space: 10,
+                                   tmp: '<span class="tp-bullet-inner"></span>'
+                               }
+                           },
+                           visibilityLevels: [1240, 1024, 778, 480],
+                           gridwidth: 1280,
+                           gridheight: 680,
+                           lazyType: "none",
+                           shadow: 0,
+                           spinner: "off",
+                           stopLoop: "off",
+                           stopAfterLoops: -1,
+                           stopAtSlide: -1,
+                           shuffle: "off",
+                           autoHeight: "off",
+                           disableProgressBar: "on",
+                           hideThumbsOnMobile: "off",
+                           hideSliderAtLimit: 0,
+                           hideCaptionAtLimit: 0,
+                           hideAllCaptionAtLilmit: 0,
+                           debugMode: false,
+                           fallbacks: {
+                               simplifyAll: "off",
+                               nextSlideOnWindowFocus: "off",
+                               disableFocusListener: false,
+                           }
+                       });
+                   };
+               };
+               }()); /*]]>*/
+               </script>
+               <script>
+               /*<![CDATA[*/
+               var htmlDivCss = unescape("%23rev_slider_1_1%20.uranus.tparrows%20%7B%0A%20%20width%3A50px%3B%0A%20%20height%3A50px%3B%0A%20%20background%3Argba%28255%2C255%2C255%2C0%29%3B%0A%20%7D%0A%20%23rev_slider_1_1%20.uranus.tparrows%3Abefore%20%7B%0A%20width%3A50px%3B%0A%20height%3A50px%3B%0A%20line-height%3A50px%3B%0A%20font-size%3A40px%3B%0A%20transition%3Aall%200.3s%3B%0A-webkit-transition%3Aall%200.3s%3B%0A%20%7D%0A%20%0A%20%20%23rev_slider_1_1%20.uranus.tparrows%3Ahover%3Abefore%20%7B%0A%20%20%20%20opacity%3A0.75%3B%0A%20%20%7D%0A%23rev_slider_1_1%20.uranus%20.tp-bullet%7B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20box-shadow%3A%200%200%200%202px%20rgba%28255%2C%20255%2C%20255%2C%200%29%3B%0A%20%20-webkit-transition%3A%20box-shadow%200.3s%20ease%3B%0A%20%20transition%3A%20box-shadow%200.3s%20ease%3B%0A%20%20background%3Atransparent%3B%0A%20%20width%3A15px%3B%0A%20%20height%3A15px%3B%0A%7D%0A%23rev_slider_1_1%20.uranus%20.tp-bullet.selected%2C%0A%23rev_slider_1_1%20.uranus%20.tp-bullet%3Ahover%20%7B%0A%20%20box-shadow%3A%200%200%200%202px%20rgba%28255%2C%20255%2C%20255%2C1%29%3B%0A%20%20border%3Anone%3B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20background%3Atransparent%3B%0A%7D%0A%0A%23rev_slider_1_1%20.uranus%20.tp-bullet-inner%20%7B%0A%20%20-webkit-transition%3A%20background-color%200.3s%20ease%2C%20-webkit-transform%200.3s%20ease%3B%0A%20%20transition%3A%20background-color%200.3s%20ease%2C%20transform%200.3s%20ease%3B%0A%20%20top%3A%200%3B%0A%20%20left%3A%200%3B%0A%20%20width%3A%20100%25%3B%0A%20%20height%3A%20100%25%3B%0A%20%20outline%3A%20none%3B%0A%20%20border-radius%3A%2050%25%3B%0A%20%20background-color%3A%20rgb%28255%2C%20255%2C%20255%29%3B%0A%20%20background-color%3A%20rgba%28255%2C%20255%2C%20255%2C%200.3%29%3B%0A%20%20text-indent%3A%20-999em%3B%0A%20%20cursor%3A%20pointer%3B%0A%20%20position%3A%20absolute%3B%0A%7D%0A%0A%23rev_slider_1_1%20.uranus%20.tp-bullet.selected%20.tp-bullet-inner%2C%0A%23rev_slider_1_1%20.uranus%20.tp-bullet%3Ahover%20.tp-bullet-inner%7B%0A%20transform%3A%20scale%280.4%29%3B%0A%20-webkit-transform%3A%20scale%280.4%29%3B%0A%20background-color%3Argb%28255%2C%20255%2C%20255%29%3B%0A%7D%0A");
+               var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+               if (htmlDiv) {
+               htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+               } else {
+               var htmlDiv = document.createElement('div');
+               htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+               document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+               } /*]]>*/
+               </script>
+               
+               <script>
+                   const form = document.querySelector('#form1')
+                   const sendMessage = document.querySelector('#sendMessage')
+               
+                   form.addEventListener("submit", async (e) => {
+                           e.preventDefault();
+                           const name = form.name.value;
+                           const email = form.email.value;
+                           const message = form.message.value;
+                           try {
+                               const res = await fetch('/contact', {
+                                   method: "POST",
+                                   body: JSON.stringify({ name, email, message }),
+                                   headers: { "Content-Type": "application/json" }
+                               });
+                               
+                               if (res.redirected) {
+                                   window.location.href = res.url;
+                               } else {
+                                   const data = await res.json();
+                                   if (data.succeeded) {
+                                       sendMessage.textContent = "Your message received successfully";
+                                       sendMessage.style.display = "block";
+               
+                                       setTimeout(() => {
+                                           sendMessage.style.display = "none";
+                                           form.name.value = "";
+                                           form.email.value = "";
+                                           form.message.value = "";
+                                       }, 5000);
+                                   }
+                               }
+                           } catch (err) {
+                               console.log("ERR::", err);
+                           }
+                       });
+                </script>
+               
+               
+               </body>
+               </html>

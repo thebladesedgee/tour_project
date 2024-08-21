@@ -1,0 +1,17 @@
+body {
+  margin: 20px;
+}
+.table-container {
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.header-btn {
+  margin-bottom: 15px;
+}
+.table-responsive {
+  overflow-x: auto;
+}

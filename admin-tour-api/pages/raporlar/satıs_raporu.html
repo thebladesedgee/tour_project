@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Ve Header</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../../assets/components/SidebarAndHeader.css"
+    />
+    <style>
+      .table-container {
+        margin-top: 20px;
+      }
+
+      .table th,
+      .table td {
+        vertical-align: middle;
+      }
+
+      .pagination {
+        justify-content: center;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 0.25rem;
+        margin-bottom: 10px;
+      }
+
+      .header h4 {
+        margin: 0;
+      }
+
+      .stats {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .stat-item {
+        flex: 1;
+        text-align: center;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 0.25rem;
+        margin-right: 10px;
+      }
+
+      .stat-item:last-child {
+        margin-right: 0;
+      }
+
+      .filters {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+
+      .filters .form-group {
+        flex: 1;
+        margin-right: 10px;
+      }
+
+      .filters .form-group:last-child {
+        margin-right: 0;
+      }
+
+      .actions {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="left-section">
+        <button id="toggle-sidebar" class="btn btn-primary mr-2">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo"><a href="#">GEZİBURADA TRAVEL</a></div>
+      </div>
+      <div class="icons">
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fas fa-bell"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+      </div>
+    </div>
+
+    <!-- Sidebar and Main Content -->
+    <div class="container-fluid">
+      <div class="sidebar" id="sidebar">
+        <!-- Accordion -->
+        <!-- Kayıtlar -->
+        <div class="accordion" id="sidebarAccordion">
+          <div class="card">
+            <div class="card-header mytitle">Kayıtlar</div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <span class="accordion-title">Rezervasyonlar</span>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#sidebarAccordion"
+            >
+              <div class="card-body">
+                <div class="list-group">
+                  <a
+                    href="/pages/rezervasyonlar/onaybekleyenler.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Onay Bekleyenler</a
+                  >
+                  <a
+                    href="/pages/rezervasyonlar/rezervasyonlar.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Rezervasyonlar</a
+                  >
+                  <a
+                    href="/pages/rezervasyonlar/iptaller.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >İptaller</a
+                  >
+                  <a
+                    href="/pages/rezervasyonlar/sepet_terk.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Sepet Terk</a
+                  >
+                  <a
+                    href="/pages/rezervasyonlar/yeni_rezervasyonlar.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Yeni Rezervasyonlar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <i class="fa-solid fa-inbox"></i>
+                  <span class="accordion-title">Gelen Kutusu</span>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#sidebarAccordion"
+            >
+              <div class="card-body">
+                <div class="list-group">
+                  <a
+                    href="/pages/Gelen_Kutusu/gelenKutusu.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Gelen Kutusu</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                  <span class="accordion-title">Müşteri Yönetimi</span>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#sidebarAccordion"
+            >
+              <div class="card-body">
+                <div class="list-group">
+                  <a
+                    href="/pages/musteri_yonetimi/musteriler.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Müşteriler</a
+                  >
+                  <a
+                    href="/pages/musteri_yonetimi/yeni_musteriler.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Yeni Müşteriler</a
+                  >
+                  <a
+                    href="/pages/musteri_yonetimi/aktarımlar.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Aktarımlar</a
+                  >
+                  <a
+                    href="/pages/musteri_yonetimi/karaListe.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Kara Liste</a
+                  >
+                  <a
+                    href="/pages/musteri_yonetimi/Kuponlar.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                  >
+                    Kuponlar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  id="toggleRapor"
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse4"
+                  aria-expanded="false"
+                  aria-controls="collapse4"
+                >
+                  <i class="fa-regular fa-chart-bar"></i>
+                  <span class="accordion-title">Raporlar</span>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapse4"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#sidebarAccordion"
+            >
+              <div class="card-body">
+                <div class="list-group">
+                  <a
+                    href="/pages/raporlar/satıs_raporu.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Satış Raporu</a
+                  >
+                  <a
+                    href="/pages/raporlar/gun_rapru.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Gün Raporu</a
+                  >
+                  <a
+                    href="/pages/raporlar/tur_raporu.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Tur Raporları</a
+                  >
+                  <a
+                    href="/pages/raporlar/otel_raporu.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Otel Raporları</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Ürün ve Hizmet -->
+          <div class="card">
+            <div class="card-header mytitle">Ürün ve Hizmet</div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse5"
+                  aria-expanded="false"
+                  aria-controls="collapse5"
+                >
+                  <i class="fa-solid fa-bus"></i>
+                  <span class="accordion-title">Tur ve Aktiviteler</span>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapse5"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#sidebarAccordion"
+            >
+              <div class="card-body">
+                <div class="list-group">
+                  <a
+                    href="/pages/tur_ve_aktiviteler/Yeni_ekle.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Yeni Ekle</a
+                  >
+                  <a
+                    href="/pages/tur_ve_aktiviteler/Satistakiler.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Satıştakiler</a
+                  >
+                  <a
+                    href="/pages/tur_ve_aktiviteler/pasifler.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Pasifler</a
+                  >
+                  <a
+                    href="/pages/tur_ve_aktiviteler/suresi_gecenler.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Süresi Geçenler</a
+                  >
+                  <a
+                    href="/pages/tur_ve_aktiviteler/Tur_veKategoriler.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Tur Kategorileri</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse6"
+                  aria-expanded="false"
+                  aria-controls="collapse6"
+                >
+                  <i class="fa-solid fa-mug-saucer"></i>
+                  <span class="accordion-title">Diğer Hizmetler</span>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapse6"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#sidebarAccordion"
+            >
+              <div class="card-body">
+                <div class="list-group">
+                  <a
+                    href="/pages/diger_hizmetler/yeni_ekle.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Yeni Ekle</a
+                  >
+                  <a
+                    href="/pages/diger_hizmetler/satistakiler.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Satıştakiler</a
+                  >
+                  <a
+                    href="/pages/diger_hizmetler/ek_hizmet_ve.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Ek Hizmetler ve Ürünler</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- YÖNETİM VE ARAÇLAR -->
+          <div class="card">
+            <div class="card-header mytitle">Yönetim ve Araçlar</div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse7"
+                  aria-expanded="false"
+                  aria-controls="collapse7"
+                >
+                  <i class="fa-solid fa-print"></i>
+                  <span class="accordion-title">Muhasebe</span>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapse7"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#sidebarAccordion"
+            >
+              <div class="card-body">
+                <div class="list-group">
+                  <a
+                    href="/pages/muhasebe/web_pos.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >WebPos</a
+                  >
+                  <a
+                    href="/pages/muhasebe/tahsilatlar.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Tahsilatlar</a
+                  >
+                  <a
+                    href="/pages/muhasebe/OdemeHareketleri.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Ödeme Hareketleri</a
+                  >
+                  <a
+                    href=""
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Ödeme Bekleyenler</a
+                  >
+                  <a
+                    href="/pages/muhasebe/faturalar.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Faturalar</a
+                  >
+                  <a
+                    href="/pages/muhasebe/urunler.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Ürünler</a
+                  >
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Ayarlar</a
+                  >
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Kuponlar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse8"
+                  aria-expanded="false"
+                  aria-controls="collapse8"
+                >
+                  <i class="fa-regular fa-file"></i>
+                  <span class="accordion-title">İçerik Yönetimİ</span>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapse8"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#sidebarAccordion"
+            >
+              <div class="card-body">
+                <div class="list-group">
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Sayfalar</a
+                  >
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Blog Yöneticisi</a
+                  >
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Kategori İndeksi</a
+                  >
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Yorumlar</a
+                  >
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Formlar</a
+                  >
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Dosyalar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse9"
+                  aria-expanded="false"
+                  aria-controls="collapse9"
+                >
+                  <i class="fa-solid fa-inbox"></i>
+                  <span class="accordion-title">Teklifler</span>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapse9"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#sidebarAccordion"
+            >
+              <div class="card-body">
+                <div class="list-group">
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Yeni Teklif</a
+                  >
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Bekleyenler</a
+                  >
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Tamamlananlar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ayarlar -->
+          <div class="card">
+            <div class="card-header mytitle">Ayarlar</div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse10"
+                  aria-expanded="false"
+                  aria-controls="collapse10"
+                >
+                  <i class="fa-solid fa-gear"></i>
+                  <span class="accordion-title">Genel Ayarlar</span>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapse10"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#sidebarAccordion"
+            >
+              <div class="card-body">
+                <div class="list-group">
+                  <a
+                    href="/pages/Ayarlar/genel_ayarlar.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Site Ayarları</a
+                  >
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Menü Ayarları</a
+                  >
+                  <a
+                    href="/pages/Ayarlar/tahsilat_ayarları.html"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Tahsilat Ayarları</a
+                  >
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Hesap Ayarları</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse11"
+                  aria-expanded="false"
+                  aria-controls="collapse11"
+                >
+                  <i class="fa-solid fa-circle-plus"></i>
+                  <span class="accordion-title">Araçlar</span>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapse11"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#sidebarAccordion"
+            >
+              <div class="card-body">
+                <div class="list-group">
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Eklentiler</a
+                  >
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Entegrasyon</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse12"
+                  aria-expanded="false"
+                  aria-controls="collapse12"
+                >
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span class="accordion-title">Destek</span>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapse12"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#sidebarAccordion"
+            >
+              <div class="card-body">
+                <div class="list-group">
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    >Destek</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="container">
+          <div class="stats">
+            <div class="stat-item">
+              <h5>Dönem Satışları</h5>
+              <p>0 ₺</p>
+            </div>
+            <div class="stat-item">
+              <h5>Rezervasyon</h5>
+              <p>0</p>
+            </div>
+            <div class="stat-item">
+              <h5>Pax</h5>
+              <p>0</p>
+            </div>
+            <div class="stat-item">
+              <h5>Oda</h5>
+              <p>0</p>
+            </div>
+            <div class="stat-item">
+              <h5>Diğer Kanallar</h5>
+              <p>0</p>
+            </div>
+            <div class="stat-item">
+              <h5>Web Kanalı</h5>
+              <p>0</p>
+            </div>
+          </div>
+          <div class="filters">
+            <div class="form-group">
+              <label for="dateRange">Dönem</label>
+              <select id="dateRange" class="form-select form-select-sm">
+                <option value="30days">Son 30 Gün</option>
+                <option value="60days">Son 60 Gün</option>
+                <option value="90days">Son 90 Gün</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="entryDate">Giriş Tarihleri</label>
+              <select id="entryDate" class="form-select form-select-sm">
+                <option value="all">Tüm Giriş Tarihleri</option>
+                <option value="lastWeek">Son Hafta</option>
+                <option value="lastMonth">Son Ay</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="reservationStatus">Rezervasyon Durumu</label>
+              <select id="reservationStatus" class="form-select form-select-sm">
+                <option value="confirmed">Onaylanan Rezervasyonlar</option>
+                <option value="pending">Bekleyen Rezervasyonlar</option>
+                <option value="canceled">İptal Edilen Rezervasyonlar</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="productType">Ürün</label>
+              <select id="productType" class="form-select form-select-sm">
+                <option value="all">Tüm Ürünler</option>
+                <option value="room">Oda</option>
+                <option value="package">Paket</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="collectionStatus">Tahsilat Durumu</label>
+              <select id="collectionStatus" class="form-select form-select-sm">
+                <option value="all">Tahsilat Durumu</option>
+                <option value="paid">Ödendi</option>
+                <option value="unpaid">Ödenmedi</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="paymentChannel">Ödeme Kanalı</label>
+              <select id="paymentChannel" class="form-select form-select-sm">
+                <option value="all">Ödeme Kanalı</option>
+                <option value="creditCard">Kredi Kartı</option>
+                <option value="cash">Nakit</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="userChannel">Kanal ve Kullanıcılar</label>
+              <select id="userChannel" class="form-select form-select-sm">
+                <option value="all">Kanal ve Kullanıcılar</option>
+                <option value="website">Website</option>
+                <option value="agent">Acenta</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="report">Kayıtlı Raporlar</label>
+              <select id="report" class="form-select form-select-sm">
+                <option value="all">Kayıtlı Raporlar</option>
+                <option value="daily">Günlük</option>
+                <option value="weekly">Haftalık</option>
+              </select>
+            </div>
+          </div>
+          <div class="actions">
+            <div>
+              <label for="recordsPerPage">Sayfada</label>
+              <select
+                id="recordsPerPage"
+                class="form-select form-select-sm d-inline-block w-auto"
+              >
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+              </select>
+              kayıt göster
+            </div>
+            <div>
+              <button class="btn btn-warning">
+                <i class="fas fa-save"></i> KAYDET
+              </button>
+            </div>
+          </div>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>PNR</th>
+                <th>ÜRÜN</th>
+                <th>MÜŞTERİ</th>
+                <th>TUTAR</th>
+                <th>REZ. TARİHİ</th>
+                <th>GİRİŞ TARİHİ</th>
+                <th>PAX</th>
+                <th>ODA</th>
+                <th>ÖDEME</th>
+                <th>KANAL</th>
+                <th>İŞLEMLER</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="12" class="text-center">
+                  Tabloda herhangi bir veri mevcut değil
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="d-flex justify-content-between">
+            <div>Kayıt yok</div>
+            <nav>
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#">Önceki</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Sonraki</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mt-3">
+            <button class="btn btn-success">
+              <i class="fas fa-file-excel"></i> Excel
+            </button>
+            <button class="btn btn-primary">
+              <i class="fas fa-print"></i> Yazdır
+            </button>
+            <button class="btn btn-primary">
+              <i class="fas fa-file-csv"></i> CSV
+            </button>
+            <button class="btn btn-danger">
+              <i class="fas fa-file-pdf"></i> PDF
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document
+        .getElementById("toggle-sidebar")
+        .addEventListener("click", function () {
+          const sidebar = document.getElementById("sidebar");
+          sidebar.classList.toggle("minimized");
+
+          // Collapse all accordion items when toggling sidebar
+          if (sidebar.classList.contains("minimized")) {
+            $("#sidebarAccordion .collapse").collapse("hide");
+          }
+        });
+
+      document
+        .querySelectorAll(".accordion .btn-link")
+        .forEach(function (element) {
+          element.addEventListener("click", function () {
+            document.getElementById("sidebar").classList.remove("minimized");
+          });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('toggleRapor').click();
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.header,
+.main {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .left-section {
+  display: flex;
+  align-items: center;
+}
+
+.header .icons {
+  display: flex;
+  align-items: center;
+}
+
+.header .icons a {
+  margin-left: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.container-fluid {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  min-width: 200px;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: min-width 0.3s;
+}
+
+.sidebar.minimized {
+  min-width: 50px;
+  overflow: hidden;
+}
+
+.sidebar.minimized .mytitle {
+  display: none; /* Hide the title when the sidebar is minimized */
+}
+
+.sidebar.minimized .accordion-title {
+  display: none;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.accordion .card {
+  margin: 0.3rem 0; /* Smaller margin */
+}
+
+.accordion .card-header {
+  padding: 0.3rem; /* Smaller padding */
+}
+
+.accordion .card-header .btn-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.9rem; /* Smaller font size */
+}
+
+.accordion .card-header .btn-link .accordion-title {
+  margin-left: 0.5rem;
+}
